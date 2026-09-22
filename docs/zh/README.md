@@ -26,7 +26,7 @@
 
 - 旧内核也是兼容的（3.4+），不过需要自己编译内核。
 
-- 目前支持架构 : `arm64-v8a`、`armeabi-v7a`、`x86_64`。
+- 目前支持架构 : `arm64-v8a`、`armeabi-v7a`。
 
 - `Tracepoint Syscall Redirect Hook` 只支持在 GKI2 内核(5.10+) 工作
 

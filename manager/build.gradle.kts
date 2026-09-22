@@ -21,8 +21,6 @@ extra["managerPackageName"] = project.findProperty("KSU_PACKAGE_NAME")?.toString
 extra["defaultManagerAppName"] = if (extra["isPrBuild"] == true) "NeoSukiSU PR" else "NeoSukiSU"
 extra["managerName"] = project.findProperty("KSU_NAME")?.toString() ?: extra["defaultManagerAppName"]
 
-val isSpoofedBuild = project.findProperty("IS_SPOOFED_BUILD")?.toString()?.toBoolean() ?: false
-
 
 fun getGitCommitCount(): Int {
     return providers.exec {
@@ -31,11 +29,7 @@ fun getGitCommitCount(): Int {
 }
 
 fun getGitDescribe(): String {
-    val desc = providers.exec {
+    return providers.exec {
         commandLine("git", "describe", "--tags", "--always", "--abbrev=0")
     }.standardOutput.asText.get().trim()
-    if (isSpoofedBuild) {
-        return "$desc-spoofed"
-    }
-    return desc
 }

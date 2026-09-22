@@ -26,7 +26,7 @@ A rebranded fork of [`ReSukiSU/ReSukiSU`](https://github.com/ReSukiSU/ReSukiSU),
 
 - Older kernels (3.4+) are also compatible, but the kernel will have to be built manually.
 
-- Currently, only `arm64-v8a`, `armeabi-v7a` and `X86_64`are supported.
+- Currently, only `arm64-v8a` and `armeabi-v7a` are supported.
 
 - [SuSFS](https://gitlab.com/simonpunk/susfs4ksu) in this project is **Only** support backport to kernel 4.3+
 

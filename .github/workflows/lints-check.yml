@@ -50,7 +50,7 @@ jobs:
           rustup update nightly
           rustup toolchain install nightly --component clippy
           rustup default nightly
-          rustup target install aarch64-linux-android armv7-linux-androideabi x86_64-linux-android
+          rustup target install aarch64-linux-android armv7-linux-androideabi
 
       - uses: Swatinem/rust-cache@v2
         if: github.event_name != 'pull_request'
@@ -64,10 +64,9 @@ jobs:
         run: |
           cd userspace/ksud
           cargo ndk -t arm64-v8a clippy
-          cargo ndk -t x86_64 clippy
+          cargo ndk -t armv7-linux-androideabi clippy
           cd ../ksuinit
           cargo ndk -t arm64-v8a clippy
-          cargo ndk -t x86_64 clippy
 
   shellcheck:
     name: ShellCheck
