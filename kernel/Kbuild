@@ -51,7 +51,7 @@ ccflags-y += -I$(src) -I$(src)/include
 
 obj-$(CONFIG_KSU) += kernelsu.o
 
-REPO_NAME := ReSukiSU
+REPO_NAME := NeoSukiSU
 
 KDIR := $(KDIR)
 

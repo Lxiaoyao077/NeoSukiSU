@@ -2,8 +2,6 @@
 
 English is maintained by the developer. If you find inappropriate wording or missing translations, please open an issue or submit a pull request with details.
 
-For languages other than English and Chinese Simplified, please don't create pull requests for translations; instead, use [Weblate](https://hosted.weblate.org/engage/ReSukiSU).
-
 ## Reporting bugs
 
 Before reporting a bug, please first read the [document](https://resukisu.org)
@@ -12,7 +10,7 @@ If the issue still exists, please ensure you have tried the **latest CI build**,
 
 **You can export log from `Settings` page**
 
-When you [Open an issue](https://github.com/ReSukiSU/ReSukiSU/issues), you **must**:
+When you [Open an issue](https://github.com/Lxiaoyao077/NeoSukiSU/issues), you **must**:
 
 - Select right issue template
 - Ensure it doesn't duplicate with current issues.
@@ -23,7 +21,7 @@ When you [Open an issue](https://github.com/ReSukiSU/ReSukiSU/issues), you **mus
 
 ## Suggesting features
 
-[Open an issue](https://github.com/ReSukiSU/ReSukiSU/issues) describing the feature you want and your reason for it.
+[Open an issue](https://github.com/Lxiaoyao077/NeoSukiSU/issues) describing the feature you want and your reason for it.
 
 ## Code
 
@@ -54,7 +52,7 @@ Please note:
 
         Signed-off-by: Fred Jones <fred.jones@foo.org>
 ```
->- then Joe Smith would upload the patch for ReSukiSU as
+>- then Joe Smith would upload the patch for NeoSukiSU as
 ```
         kernel: patch from upstream (https://github.com/tiann/KernelSU/pull/114514)
 
