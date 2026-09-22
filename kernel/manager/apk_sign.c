@@ -32,6 +32,7 @@ struct sdesc {
 };
 
 static apk_sign_key_t apk_sign_keys[] = {
+    { EXPECTED_SIZE_NEOSUKISU, EXPECTED_HASH_NEOSUKISU }, /* NeoSukiSU/NeoSukiSU */
     { EXPECTED_SIZE_RESUKISU, EXPECTED_HASH_RESUKISU }, /* ReSukiSU/ReSukiSU */
 #ifdef CONFIG_KSU_MULTI_MANAGER_SUPPORT
     { EXPECTED_SIZE_OFFICIAL, EXPECTED_HASH_OFFICIAL }, // tiann/KernelSU
